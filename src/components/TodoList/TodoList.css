@@ -1,0 +1,8 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.tbl {
+  width: 30vw;
+}
