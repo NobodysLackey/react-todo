@@ -1,26 +1,24 @@
 import React from 'react'
 
-function todo({item, handleDeleteTodo, handleUpdateTodo}){
-  function handleClick(item){
-    console.log('mmmm')
-    let newItem = {...item, ['done']: !item.done}
-    console.log(item)
-    handleUpdateTodo(newItem)
-  }
+function todo(props){
+  // function handleClick(item){
+  //   let newItem = {...item, ['done']: !item.done}
+  //   props.handleUpdateTodo(newItem)
+  // }
     return (
       <>
         <td>
-          <button
+          {/* <button
               className='btn btn-xs margin-left-10'
-              onClick={() => handleDeleteTodo(item)}
-          >X</button>
+              onClick={() => props.handleDeleteTodo(item)}
+          >X</button> */}
         </td>
         <td>
           <p 
             style={{'textDecoration': item.done ? 'line-through' : '' }}
-            onClick={()=>handleClick(item)}
+            // onClick={()=>props.handleClick(item)}
           >
-          {item.task}
+          {props.item.task}
           </p>
         </td>
       </>

@@ -2,7 +2,7 @@ import React from 'react';
 import Todo from '../Todo/Todo'
 import './TodoList.css'
 
-function TodoList({items, handleDeleteTodo, handleUpdateTodo}){
+function TodoList(props){
   if(items.length){
   return (
     <div className='container'>
@@ -11,10 +11,10 @@ function TodoList({items, handleDeleteTodo, handleUpdateTodo}){
         {items.map(item => 
           <tr>
           <Todo 
-            item = {item} 
-            key = {item._id}
-            handleDeleteTodo = {handleDeleteTodo}
-            handleUpdateTodo = {handleUpdateTodo}
+            item = {props.item} 
+            key = {props.item._id}
+            // handleDeleteTodo = {props.handleDeleteTodo}
+            // handleUpdateTodo = {props.handleUpdateTodo}
           />
           </tr>
         )}
