@@ -7,8 +7,7 @@ function TodoPage (props){
 
   return (
     <div className='pg-container'>
-      <h1> Test To Do Page</h1>
-      {/* <h1 className='title'>{props.title}</h1>
+      <h1 className='title'>{props.title}</h1>
       <TodoList 
         items={props.items}
         handleDeleteTodo = {props.handleDeleteTodo}
@@ -16,7 +15,7 @@ function TodoPage (props){
       />
       <AddTodo
         handleAddTodo={props.handleAddTodo}
-      /> */}
+      />
     </div>
   )
 }

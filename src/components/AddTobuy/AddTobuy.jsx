@@ -11,6 +11,9 @@ class AddTobuy extends Component {
   }
 
   handleChange = e => {
+    if(e.target.name === 'purchased'){
+      e.target.value = !this.state.formData.done
+    }
     this.setState({
       formData: {...this.state.formData, [e.target.name]:e.target.value}
     })

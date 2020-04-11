@@ -1,22 +1,20 @@
 import React from 'react';
-import Todo from '../Todo/Todo'
-import './TodoList.css'
+import Todo from '../Todo/Todo';
+import './TodoList.css';
 
 function TodoList(props){
-  if(items.length){
+  if(props.items.length){
   return (
     <div className='container'>
       <table className='table tbl'>
         <tbody>
-        {items.map(item => 
-          <tr>
+        {props.items.map(item => 
           <Todo 
-            item = {props.item} 
-            key = {props.item._id}
-            // handleDeleteTodo = {props.handleDeleteTodo}
-            // handleUpdateTodo = {props.handleUpdateTodo}
+            item = {item} 
+            key = {item._id}
+            handleDeleteTodo = {props.handleDeleteTodo}
+            handleUpdateTodo = {props.handleUpdateTodo}
           />
-          </tr>
         )}
         </tbody>
       </table>

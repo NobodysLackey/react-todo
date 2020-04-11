@@ -7,7 +7,7 @@ function TobuyPage ({title, items, handleAddTobuy, handleDeleteTobuy, handleUpda
   return (
     <div className='pg-container'>
       <h1>Test to buy page</h1>
-      {/* <h1 className='title'>{title}</h1>
+      <h1 className='title'>{title}</h1>
       <TobuyList 
         items={items}
         handleDeleteTobuy = {handleDeleteTobuy}
@@ -15,7 +15,7 @@ function TobuyPage ({title, items, handleAddTobuy, handleDeleteTobuy, handleUpda
       />
       <AddTobuy 
         handleAddTobuy={handleAddTobuy}
-      /> */}
+      />
     </div>
   )
 }

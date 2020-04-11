@@ -2,7 +2,7 @@ import React from 'react';
 
 function toBuy({item, handleDeleteTobuy, handleUpdateTobuy}){
   function handleClick (){
-    let newItem = {...item, ['purchased']: !item.purchased}
+    let newItem = {...item, 'purchased': !item.purchased}
     handleUpdateTobuy(newItem)
   }
   return (
